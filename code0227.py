@@ -73,7 +73,7 @@ Xtr_more = get_more_images(Xtrain)
 Ytr_more = np.concatenate((Ytrain,Ytrain,Ytrain))
 
 def getModel_inception():
-    #google incepyion with residual learning
+    #google incepyion with residual learning?
     input_img = Input(shape=(75, 75, 3))
     tower_1 = Conv2D(64, (1, 1), padding='same', activation='relu')(input_img)
     tower_1 = Conv2D(64, (3, 3), padding='same', activation='relu')(tower_1)
